@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Exam</title>
+    <link rel="stylesheet" href="../css/exam.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    <div class="all">
+        <div id="box-time">
+            <img class="imgTimer" src="../img/timer.png" alt="time-img">
+            <div id="timer">
+                <div id="backgroundTimer"></div>
+                <span id="timerDisplay">00:00</span>
+            </div>
+        </div>
+
+        <div id="content"></div>
+
+       <div class="btns"> 
+        <button id="pre" class="prev-button"><i class="fas fa-chevron-left"></i> Privues</button>
+        <button id="flag" class="flag-button"><i class="fas fa-flag"></i></button>
+        <button id="next" class="next-button">Next<i class="fas fa-chevron-right"></i></button>
+        <button id="submit">Submit</button>
+        <button id="trueAnswers">Get True Answers</button>
+       </div>
+
+       <button id="toggleSide" >☰</button>
+       <div id="side">
+           <h3>Flag Questions:</h3>
+           <ul id="ulFlag"></ul>
+       </div>
+    </div>
+    <script src="exam.js"></script>
+</body>
+</html>
